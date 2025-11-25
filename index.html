@@ -1,8 +1,322 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
+
+    <style>
+        /* ====== ESTILO PROFESIONAL VERDE SUAVE ====== */
+
+        :root {
+            --verde: #4CAF50;
+            --verde-claro: #81C784;
+            --fondo-claro: #f4f4f4;
+            --texto: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--fondo-claro);
+            color: var(--texto);
+            line-height: 1.6;
+        }
+header {
+    display: flex;           /* Coloca el logo y el texto en línea */
+    align-items: center;     /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 15px;               /* Espacio entre el logo y el texto */
+    padding: 30px;
+    background-color: #4CAF50; /* Verde Eco Wave */
+    color: white;
+}
+
+header .logo {
+    width: 80px;   /* Ajusta tamaño del logo */
+    height: auto;  /* Mantiene proporción */
+}
+
+        nav {
+            background: #2e7d32;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.11);
+        }
+
+        h2 {
+            color: var(--verde);
+            border-left: 6px solid var(--verde);
+            padding-left: 12px;
+        }
+
+        img.sec-img {
+            width: 100%;
+            border-radius: 12px;
+            margin: 18px 0;
+        }
+
+        /* FRASE DESTACADA */
+        .frase-container {
+            background: var(--verde-claro);
+            color: white;
+            margin: 40px auto;
+            padding: 40px;
+            text-align: center;
+            max-width: 900px;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+        }
+
+        .frase {
+            font-size: 2.2em;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        .autor {
+            margin-top: 18px;
+            font-size: 1.3em;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            background-color: var(--verde);
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 12px;
+            font-size: 1.8em;
+            text-decoration: none;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 12px 20px;
+            font-weight: bold;
+            color: white;
+            background: var(--verde);
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .btn-link:hover {
+            background: #2e7d32;
+        }
+
+        /* Sección de proyectos y curiosidades */
+        .proyecto, .dato {
+            margin: 15px 0;
+            padding: 18px;
+            background-color: #e8f5e9;
+            border-left: 5px solid var(--verde);
+            border-radius: 10px;
+        
+        }
+
+        .proyecto img, .dato img {
+            margin-top: 12px;
+        }
+/* Estilo específico para las imágenes dentro de la sección de proyectos */
+#proyectos .sec-img {
+    width: 50%;        /* Ajusta el tamaño a tu gusto */
+    display: block;    /* Centrar la imagen */
+    margin: 15px auto; /* Margen superior e inferior y centrado horizontal */
+    border-radius: 12px; 
+}
+
+    </style>
+</head>
+
+<body>
+
 <header>
     <img src="logo.png" alt="Logo Eco Wave" class="logo">
     <h1>ECO WAVE 🌊</h1>
     <p>Innovación, energía y sostenibilidad para un futuro verde</p>
     
 </header>
+
+
+<nav>
+    <a href="#nosotros">Quiénes Somos</a>
+    <a href="mision.html">Misión</a>
+    <a href="vision.html">Visión</a>
+    <a href="foda.html">FODA</a>
+    <a href="amazon.html">Amazon</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<!-- ================== SECCIÓN QUIÉNES SOMOS ================== -->
+<section id="nosotros">
+    <h2>Quiénes Somos</h2>
+
+    <img class="sec-img" src="https://www.acciona.com/content/dam/accionacom/media/h3jlkanm/acciona-capacidad-produccion-energia-renovable.jpg" alt="Energía renovable y sostenibilidad">
+
+    <p><strong>Eco Wave</strong> es una organización comprometida con la innovación sostenible. Ofrecemos soluciones que combinan energía renovable, educación ambiental y tecnología limpia.</p>
+
+    <p>Nos destacamos por nuestro compromiso con comunidades vulnerables, colaborando con gobiernos, ONGs y empresas para construir un futuro más verde e inclusivo.</p>
+
+    <a href="mision.html" class="btn-link">Conoce nuestra misión →</a>
+</section>
+
+<!-- ================== MISIÓN ================== -->
+<section id="vision">
+    <h2>Nuestra Misión</h2>
+
+    <img class="sec-img" src="data:image/jpeg;base64,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" alt="Paneles solares y energía limpia">
+
+    <p>Impulsar el cambio hacia un modelo energético sostenible, brindando alternativas limpias, accesibles e innovadoras.</p>
+
+    <a href="vision.html" class="btn-link">Ver nuestra visión →</a>
+</section>
+
+<!-- ================== VALORES ================== -->
+<section id="valores">
+    <h2>Nuestros Valores</h2>
+
+    <img class="sec-img" src="https://www.proyectaimpacto.com/wp-content/uploads/2024/03/A65_Cambio-Climatico_Banner.png" alt="Reforestación y naturaleza">
+
+    <ul>
+        <li><strong>Sostenibilidad:</strong> Proyectos que cuidan el planeta.</li>
+        <li><strong>Innovación:</strong> Tecnología moderna aplicada a energías limpias.</li>
+        <li><strong>Educación:</strong> Transformación social a través del conocimiento.</li>
+        <li><strong>Compromiso Social:</strong> Trabajo con comunidades y aliados globales.</li>
+    </ul>
+
+    <a href="foda.html" class="btn-link">Ver análisis FODA →</a>
+</section>
+
+<!-- ================== ACCIÓN POR EL CLIMA ================== -->
+<section id="accion">
+    <h2>ODS 13: Acción por el Clima</h2>
+
+    <img class="sec-img" src="https://compartir.coop/sites/default/files/styles/wide/public/2020-07/iStock-995745832-w.jpg?itok=VVskM9Fv" alt="Impacto del cambio climático y acción sostenible">
+
+    <p><strong>Eco Wave</strong> lidera iniciativas de acción por el clima mediante la promoción de productos sostenibles y ecológicos disponibles en Amazon, incluyendo paneles solares portátiles, kits de energía renovable, cargadores solares y accesorios ecológicos. Cada compra no solo ofrece soluciones energéticas limpias, sino que también contribuye directamente a programas de reforestación, conservación de bosques y restauración de ecosistemas degradados en Colombia y otras regiones del mundo.</p>
+
+    <p>Nuestros proyectos están diseñados para reducir la huella de carbono de las comunidades y fomentar la adopción de tecnologías limpias en la vida diaria. Además, cada producto vendido permite financiar talleres de educación ambiental, campañas de concientización sobre el cambio climático y acciones concretas de protección de la biodiversidad.</p>
+
+    <p>Al elegir Eco Wave, los consumidores se convierten en aliados activos en la lucha contra el cambio climático, apoyando un modelo de negocio que combina innovación, sostenibilidad y responsabilidad social. Con su ayuda, trabajamos para restaurar ecosistemas vulnerables, proteger especies en peligro y garantizar un futuro más verde para las próximas generaciones.</p>
+
+    <a href="amazon.html" class="btn-link">Descubre nuestros productos eco y contribuye al clima →</a>
+</section>
+
+<!-- ================== IMPACTO CLIMÁTICO ================== -->
+<section id="info">
+    <h2>Impacto del Cambio Climático</h2>
+
+    <img class="sec-img" src="https://portalacademico.cch.unam.mx/sites/default/files/intro-cambio-climatico.jpg" alt="Efectos del cambio climático">
+
+    <p>El cambio climático provoca:</p>
+    <ul>
+        <li>Aumento del nivel del mar</li>
+        <li>Sequías e inundaciones extremas</li>
+        <li>Pérdida de ecosistemas</li>
+        <li>Afectación a la agricultura y salud humana</li>
+    </ul>
+</section>
+
+<!-- ================== PROYECTOS DESTACADOS ================== -->
+<section id="proyectos">
+    <h2>Proyectos que ayudan al clima</h2>
+
+    <div class="proyecto">
+        <h3>Reforestación Andina</h3>
+        <p>Plantar más de 50,000 árboles nativos cada año para recuperar ecosistemas degradados.</p>
+        <img class="sec-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTbAiihTRQFe6XgkQWrk-ZHIotvdbNNipfeg&s" alt="Reforestación">
+    </div>
+
+    <div class="proyecto">
+        <h3>Energía Solar Comunitaria</h3>
+        <p>Instalación de paneles solares en comunidades rurales, reduciendo emisiones de CO₂ y costos energéticos.</p>
+        <img class="sec-img" src="https://media.licdn.com/dms/image/v2/D4D12AQHmWIj6eOz1-A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1679661365181?e=2147483647&v=beta&t=-jy35KvkjjyfwrsUIoRhQhfO6Q-IyGm2YIJYrHfNQto" alt="Energía solar comunitaria">
+    </div>
+
+    <div class="proyecto">
+        <h3>Educación Ambiental</h3>
+        <p>Programas educativos sobre cambio climático y sostenibilidad en escuelas y comunidades locales.</p>
+        <img class="sec-img" src="https://concepto.de/wp-content/uploads/2019/11/educacion-ambiental-e1573083163332-800x400.jpg" alt="Educación ambiental">
+    </div>
+</section>
+
+<!-- ================== DATOS CURIOSOS ================== -->
+<section id="datos">
+    <h2>Datos curiosos sobre el cambio climático</h2>
+
+    <div class="dato">
+        <p>🌡️ La temperatura global ha subido aproximadamente <strong>1.1°C</strong> desde la era preindustrial.</p>
+    </div>
+
+    <div class="dato">
+        <p>💨 Los desastres climáticos han aumentado en un <strong>83%</strong> desde 1990.</p>
+    </div>
+
+    <div class="dato">
+        <p>🌊 Más de <strong>1.3 millones de personas</strong> en el mundo han sido desplazadas por inundaciones y fenómenos climáticos en la última década.</p>
+    </div>
+
+    <div class="dato">
+        <p>🌱 Proyectos de reforestación pueden absorber hasta <strong>10 toneladas de CO₂ por hectárea</strong> al año.</p>
+    </div>
+</section>
+
+<!-- ================== INFORMACIÓN ADICIONAL ================== -->
+<section id="informacion">
+    <h2>Más información sobre acción climática</h2>
+
+    <p>Los países del mundo están implementando políticas para cumplir los objetivos del Acuerdo de París y la ODS 13. Algunas estrategias incluyen:</p>
+
+    <ul>
+        <li>Transición a energías renovables (solar, eólica, hidroeléctrica).</li>
+        <li>Movilidad sostenible: transporte eléctrico y transporte público eficiente.</li>
+        <li>Protección y restauración de ecosistemas forestales y marinos.</li>
+        <li>Educación y concientización ambiental a nivel global.</li>
+    </ul>
+
+    <p>Acciones individuales también son importantes: reducir consumo energético, reciclar, plantar árboles y apoyar iniciativas ambientales.</p>
+</section>
+
+<!-- ================== FRASE DE OBAMA ================== -->
+<div class="frase-container">
+    <div class="frase">“Somos la primera generación que siente el impacto del cambio climático y la última que puede hacer algo al respecto.”</div>
+    <div class="autor">— Barack Obama</div>
+</div>
+
+<!-- ================== CONTACTO ================== -->
+<footer id="contacto">
+    <h2>Contacto Eco Wave</h2>
+    <p>🌍 Email: contacto@ecowave.org</p>
+    <p>📞 Teléfono: +57 300 608 7138</p>
+
+    <a href="https://www.instagram.com/_ecowave_3107/">📸</a>
+    <a href="https://www.youtube.com/watch?v=PsDY2WgvdCk">🎥</a>
+
+    <p>© 2025 ECO WAVE | Energía Renovable y Educación Ambiental</p>
+</footer>
+
+</body>
+</html>
