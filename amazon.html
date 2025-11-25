@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+    /* ====== ESTILO NATURAL ALTERNATIVO ====== */
+
+    :root {
+        --verde-principal: #4CAF50;
+        --verde-suave: #A8E6A3;
+        --verde-claro: #C8FACC;
+        --beige: #FAF7F0;
+        --gris-texto: #2F2F2F;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Roboto', Arial, sans-serif;
+        background-color: var(--beige);
+        color: var(--gris-texto);
+        line-height: 1.7;
+    }
+
+    header {
+        background: linear-gradient(135deg, var(--verde-principal), var(--verde-suave));
+        color: white;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 0.3rem;
+    }
+
+    header p {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        background-color: var(--verde-suave);
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    nav a {
+        color: var(--gris-texto);
+        margin: 0 18px;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s, transform 0.2s;
+    }
+
+    nav a:hover {
+        color: var(--verde-principal);
+        transform: scale(1.05);
+    }
+
+    section {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 30px 25px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+        color: var(--verde-principal);
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        border-bottom: 3px solid var(--verde-claro);
+        padding-bottom: 5px;
+    }
+
+    img.sec-img {
+        width: 100%;
+        border-radius: 15px;
+        margin: 20px 0;
+        border: 2px solid var(--verde-suave);
+    }
+
+    p, li {
+        font-size: 1.05rem;
+    }
+
+    ul {
+        padding-left: 22px;
+    }
+
+    .frase-container {
+        background: var(--verde-claro);
+        color: var(--verde-principal);
+        text-align: center;
+        padding: 35px 20px;
+        border-radius: 15px;
+        max-width: 900px;
+        margin: 50px auto;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+
+    .frase {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    .autor {
+        margin-top: 15px;
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+
+    .btn-link {
+        display: inline-block;
+        margin-top: 18px;
+        padding: 12px 22px;
+        background-color: var(--verde-principal);
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn-link:hover {
+        background-color: var(--verde-suave);
+        color: var(--verde-principal);
+        transform: scale(1.05);
+    }
+
+    .proyecto, .dato {
+        margin: 25px 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #DFF7E0, #A8E6A3);
+        border-radius: 12px;
+        color: var(--verde-principal);
+    }
+
+    footer {
+        background-color: var(--verde-principal);
+        color: white;
+        text-align: center;
+        padding: 30px 15px;
+        margin-top: 60px;
+    }
+
+    footer a {
+        color: white;
+        margin: 0 12px;
+        font-size: 1.6rem;
+        text-decoration: none;
+        transition: transform 0.2s;
+    }
+
+    footer a:hover {
+        transform: scale(1.1);
+    }
+
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos en Amazon – Eco Wave</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="fade-in header-simple">
+    <h1>TIENDA AMAZON 🛒</h1>
+</header>
+
+<nav class="fade-in nav-simple">
+    <a href="index.html">Inicio</a>
+    <a href="mision.html">Misión</a>
+    <a href="vision.html">Visión</a>
+    <a href="foda.html">FODA</a>
+    <a href="amazon.html" class="active">Amazon</a>
+</nav>
+
+<main class="container fade-in">
+
+    <section class="section card-content">
+
+        <h2>Productos Eco-amigables</h2>
+        <p>Aquí podrás explorar productos sustentables disponibles en Amazon.</p>
+
+        <div class="product-box">
+            <h3>Bombilla Solar LED</h3>
+            <a href="#" target="_blank" class="buy-btn">Ver en Amazon</a>
+        </div>
+
+        <div class="product-box">
+            <h3>Cargador Solar PowerBank</h3>
+            <a href="#" target="_blank" class="buy-btn">Ver en Amazon</a>
+        </div>
+
+        <div class="product-box">
+            <h3>Panel Solar Portátil</h3>
+            <a href="#" target="_blank" class="buy-btn">Ver en Amazon</a>
+        </div>
+
+        <p>Próximamente agregaremos más productos.</p>
+
+    </section>
+
+</main>
+
+<footer class="fade-in footer-simple">
+    <p>© 2025 ECO WAVE – Amazon</p>
+</footer>
+
+<script src="fade.js"></script>
+
+</body>
+</html>

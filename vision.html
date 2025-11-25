@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <style>
+    /* ====== ESTILO NATURAL MINIMALISTA ====== */
+
+    :root {
+        --verde-oscuro: #3E8E41;
+        --verde-suave: #B7E4C7;
+        --verde-acento: #A3D9A5;
+        --marron-claro: #EDE3D2;
+        --gris-texto: #2F2F2F;
+        --blanco: #FFFFFF;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Lato', Arial, sans-serif;
+        background-color: var(--marron-claro);
+        color: var(--gris-texto);
+        line-height: 1.7;
+    }
+
+    header {
+        background-color: var(--verde-oscuro);
+        color: var(--blanco);
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin: 0.2rem 0;
+        font-weight: 700;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        font-weight: 400;
+    }
+
+    nav {
+        background-color: var(--verde-acento);
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    nav a {
+        color: var(--verde-oscuro);
+        margin: 0 16px;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: var(--blanco);
+    }
+
+    section {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 35px 25px;
+        background-color: var(--blanco);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+        color: var(--verde-oscuro);
+        margin-bottom: 1rem;
+        font-size: 1.9rem;
+        border-bottom: 2px solid var(--verde-suave);
+        padding-bottom: 8px;
+    }
+
+    img.sec-img {
+        width: 100%;
+        border-radius: 12px;
+        margin: 20px 0;
+        border: 1px solid var(--verde-suave);
+    }
+
+    p, li {
+        font-size: 1.05rem;
+    }
+
+    ul {
+        padding-left: 22px;
+    }
+
+    .frase-container {
+        background-color: var(--verde-suave);
+        color: var(--verde-oscuro);
+        text-align: center;
+        padding: 30px 25px;
+        border-radius: 15px;
+        max-width: 900px;
+        margin: 50px auto;
+        font-style: italic;
+        box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .frase {
+        font-size: 1.9rem;
+        font-weight: 600;
+    }
+
+    .autor {
+        margin-top: 15px;
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+
+    .btn-link {
+        display: inline-block;
+        margin-top: 18px;
+        padding: 12px 22px;
+        background-color: var(--verde-oscuro);
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn-link:hover {
+        background-color: var(--verde-acento);
+        color: var(--verde-oscuro);
+        transform: scale(1.05);
+    }
+
+    .proyecto, .dato {
+        margin: 25px 0;
+        padding: 20px;
+        background-color: var(--verde-suave);
+        border-radius: 12px;
+        color: var(--verde-oscuro);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    footer {
+        background-color: var(--verde-oscuro);
+        color: white;
+        text-align: center;
+        padding: 35px 15px;
+        margin-top: 60px;
+    }
+
+    footer a {
+        color: white;
+        margin: 0 12px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: transform 0.2s;
+    }
+
+    footer a:hover {
+        transform: scale(1.1);
+    }
+
+</style>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visión – Eco Wave</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="fade-in header-simple">
+    <h1>VISIÓN 🌍</h1>
+</header>
+
+<nav class="fade-in nav-simple">
+    <a href="index.html">Inicio</a>
+    <a href="mision.html">Misión</a>
+    <a href="vision.html" class="active">Visión</a>
+    <a href="foda.html">FODA</a>
+    <a href="amazon.html">Amazon</a>
+</nav>
+
+<main class="container fade-in">
+
+    <section class="section card-content">
+
+        <h2>Nuestra Visión</h2>
+
+        <p>
+            Aspiramos a convertirnos en una de las organizaciones líderes en Latinoamérica en educación ambiental,
+            energías renovables y tecnología limpia.
+        </p>
+
+        <p>
+            Queremos construir un futuro en el que la sostenibilidad sea accesible, innovadora y una prioridad global,
+            guiando a las comunidades hacia hábitos responsables y ecológicos.
+        </p>
+
+        <div class="highlight-box">
+            <h3>Miramos al futuro</h3>
+            <p>Un mundo donde la energía sea limpia, accesible y respetuosa con la vida.</p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="fade-in footer-simple">
+    <p>© 2025 ECO WAVE – Visión</p>
+</footer>
+
+<script src="fade.js"></script>
+
+</body>
+</html>
